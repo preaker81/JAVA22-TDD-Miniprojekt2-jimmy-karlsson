@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -81,4 +82,12 @@ class PrimeTest {
         assertTrue(76127 == prime.getSumOfPrimes());
     }
 
+
+    @Test
+    @DisplayName("Test correct primes in an interval")
+    void testCorrectPrimesInInterval() {
+        Prime prime = new Prime(10, 20);
+        List<Integer> expectedPrimes = List.of(11, 13, 17, 19);
+        assertEquals(expectedPrimes, prime.getPrimes());
+    }
 }
