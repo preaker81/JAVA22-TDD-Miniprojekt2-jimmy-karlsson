@@ -31,6 +31,7 @@ public class Prime {
     }
 
 
+// This code does not use the List of
     private boolean numIsPrime(int number, int divisor) {
         // Base cases
         if (number <= 1) return false; // Numbers less than or equal to 1 are not prime
@@ -85,6 +86,13 @@ public class Prime {
     public List<Integer> getPrimes(){
         return primes;
     }
+
+//    public static void main(String[] args) {
+//        Prime prime = new Prime(0, 1000);
+//        prime.printCount();
+//        prime.printSum();
+//        System.out.println(prime.getPrimes());
+//    }
 
 }
 
