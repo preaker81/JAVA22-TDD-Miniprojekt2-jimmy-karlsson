@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Prime {
-
     // Fields
     private List<Integer> primes; // Stores the prime numbers found within the specified range.
     private int count = 0; // Tracks the total count of prime numbers found.
