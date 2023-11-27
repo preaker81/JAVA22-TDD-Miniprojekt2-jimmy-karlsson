@@ -3,9 +3,6 @@ package org.example;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * This class calculates and stores prime numbers within a given range.
- */
 public class Prime {
 
     // Fields
@@ -13,12 +10,6 @@ public class Prime {
     private int count = 0; // Tracks the total count of prime numbers found.
     private int sumOfPrimes = 0; // Stores the sum of all prime numbers found.
 
-    /**
-     * Constructor to initialize the Prime object.
-     *
-     * @param firstNumber The starting number of the range.
-     * @param lastNumber  The ending number of the range.
-     */
     public Prime(int firstNumber, int lastNumber) {
         primes = new ArrayList<>();
         // Check if the range is valid (0 to 1000)
@@ -30,8 +21,6 @@ public class Prime {
         }
     }
 
-
-// This code does not use the List of
     private boolean numIsPrime(int number, int divisor) {
         // Base cases
         if (number <= 1) return false; // Numbers less than or equal to 1 are not prime
